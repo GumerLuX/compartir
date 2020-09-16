@@ -35,3 +35,7 @@ git commit -m "first commit"
 git branch -M master
 #Subimos los archivos:
 git push -u origin master
+
+git status
+git commit -m ".gitinore"
+
