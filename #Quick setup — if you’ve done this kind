@@ -1,0 +1,37 @@
+#Quick setup — if you’ve done this kind of thing before
+#Configuración rápida: si ha hecho este tipo de cosas antes
+
+https://github.com/SinLuX90/compartir.git
+
+#Get started by creating a new file or uploading an existing file. We recommend every repository include a README, LICENSE, and .gitignore.
+#Comience creando un archivo nuevo o cargando un archivo existente. Recomendamos que cada repositorio incluya un README, LICENSE y .gitignore.
+
+#…or create a new repository on the command line
+# Para crear un nuevo repositorio en tu PC.
+
+echo "# compartir" >> README.md 
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M master
+git remote add origin https://github.com/SinLuX90/compartir.git
+git push -u origin master
+                
+#…or push an existing repository from the command line
+# Subir un repositorio local a Github con estos comandos.
+
+git remote add origin https://github.com/SinLuX90/compartir.git
+git branch -M master
+git push -u origin master
+
+## Pasos echos al entrar.
+
+
+git clone https://github.com/SinLuX90/compartir.git
+#Creamos el archivo README.md
+echo "# compartir" >> README.md
+git init
+git commit -m "first commit"
+git branch -M master
+#Subimos los archivos:
+git push -u origin master
