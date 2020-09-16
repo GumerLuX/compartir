@@ -9,3 +9,6 @@ Creamos los scripts desde la consola y los subimos con VS.
 > Le damos permisos de ejecucion.
 > chmod +x install.sh disco.sh kernel.sh root.sh usuario.sh
 
+Le damos a git en VS y creamos un comit crear "scriptd.sh"
+En los tres puntos boton derecho -> commit -> confirmar
+-> y ponemosel nombre del commint -> crear "scriptd.sh"
