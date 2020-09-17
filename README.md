@@ -1,6 +1,6 @@
 # Compartir desde windows, linux y VirtualBox
 
-# Creacion
+## Creacion
 
 Creamos el archivo notas desde windows y activamos el .gitignore
 Creamos los scripts desde la consola y los subimos con VS.
@@ -25,7 +25,7 @@ Actualizamos el navegador y los vemos subidos.
 
 Hemos editado el archivo README.md
 
-> PAra actualizar el repo local utilizamos el comando git pull:
+> Para actualizar el repo local utilizamos el comando git pull:
 > `$ git pull`
 
 Posible error es que no tengamos asignada una rama a nuestro repositorio local,
@@ -45,3 +45,14 @@ Si lo hacemos desde VS vamos directo a los tres puntos boton derecho del mousse:
 > -> "pull""puss" -> sincronizar.
 
 Se bajaran los cambias realizados.
+
+---
+
+Ahora editamos desde github,con una maquina de VirtualBox con Arclinux plasma.
+
+> 1- Hemos entrado en el github y nos hemos identificado.
+> 2- Abriremos una terminal y clonamos el git:
+`git clone https://github.com/SinLuX90/compartir.git`
+> 3- Nos descargamos el git y hacemos un init:
+`cd compartir`  -> entramos en el directorio:
+`git init`
