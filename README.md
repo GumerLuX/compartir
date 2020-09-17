@@ -51,8 +51,13 @@ Se bajaran los cambias realizados.
 Ahora editamos desde github,con una maquina de VirtualBox con Arclinux plasma.
 
 > 1- Hemos entrado en el github y nos hemos identificado.
+
 > 2- Abriremos una terminal y clonamos el git:
+
 `git clone https://github.com/SinLuX90/compartir.git`
+
 > 3- Nos descargamos el git y hacemos un init:
+
 `cd compartir`  -> entramos en el directorio:
+
 `git init`
