@@ -61,3 +61,13 @@ Ahora editamos desde github,con una maquina de VirtualBox con Arclinux plasma.
 `cd compartir`  -> entramos en el directorio:
 
 `git init`
+
+> 4- Como estamos editando estas lineas desde github nos hemos clonado el repo y no esta completo.
+
+Entoces guardamos nuestro archivo y actualizamos desde la consola:
+
+`git status`  -> para saver el stado del repo
+
+`git pull`    -> para bajar cambios y fusinarlos.(que si hay algun cambio se actualiza)
+
+---
