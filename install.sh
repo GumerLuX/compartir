@@ -41,7 +41,7 @@ echo -e "\e[32m ACTUALIZAR REPOSITORIOS E INSTALAR EL RATON DE CONSOLA \e[0m"
 echo
 echo	Actualizamos los repositorios e instalmos el mousse para la consola  
 echo    
-echo -e   Escrive:$  "\e[1;33m pacman -Syu gpm \e[0m"     y luego exit
+echo -e   Escrive:$  "\e[1;33m pacman -Sy gpm git \e[0m"     y luego exit
 echo
 echo -e "\e[36m===================================================\e[0m"
 bash
@@ -349,8 +349,8 @@ echo
 echo   Copiamos el script de instalacion
 echo
 echo -e   Escrive:$  "\e[1;33m cd .. \e[0m"
-echo -e   Escrive:$  "\e[1;33m cp -rp arch /mnt/root \e[0m"
-echo -e   Escrive:$  "\e[1;33m git clone https://github.com/SinLuX90/arch.git /mnt/home/$usuario \e[0m"
+echo -e   Escrive:$  "\e[1;33m cp -rp compartir /mnt/root \e[0m"
+echo -e   Escrive:$  "\e[1;33m git clone https://github.com/SinLuX90/compartir.git /mnt/home/$usuario \e[0m"
 echo
 echo -e "\e[36m===================================================\e[0m"
 bash

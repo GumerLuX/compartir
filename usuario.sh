@@ -11,14 +11,14 @@ echo -e "   Bienvenido a la configuracion de \e[32mARCHLINUX\e[0m"
 echo -e "   Creado por \e[32mSinLuX90\e[0m"
 echo  
 echo -e   "     \e[32m Vamos ha configurar el entorno del usuario: \e[0m"
-echo
-echo -e   1- Activando el NetworkManager y actualizando sistema.
-echo -e   2- Ponemos el teclado en español
-echo -e   3- Elegimos los mirrors mas rapidos de ArchLinux
-echo -e   4- Instalacion de AURHelper y configurar color.
-echo -e   5- Instalando el entorno grafico "'escritorio'"
-echo
-read -p "Press enter para continuar" 
+echo    "
+        1- Activando el NetworkManager y actualizando sistema.
+        2- Ponemos el teclado en español
+        3- Elegimos los mirrors mas rapidos de ArchLinux
+        4- Instalacion de AURHelper y configurar color.
+        5- Instalando el entorno grafico "'escritorio'"
+        "
+read -p "Presiona enter para continuar" 
 clear
 # Habilitar Network Manager y actualizamos git
 echo -e "\e[36m===================================================\e[0m"
@@ -57,7 +57,7 @@ echo -e   Escrive:$  "\e[1;33m   sudo cp -vf /etc/pacman.d/mirrorlist /etc/pacma
 echo
 echo -e "   Instalamos el programa midiante el script reflector:"
 echo
-echo -e   Escrive:$  "\e[1;33m   sudo pacman -S reflector git \e[0m"
+echo -e   Escrive:$  "\e[1;33m   sudo pacman -S reflector \e[0m"
 echo
 echo -e "\e[36m===================================================\e[0m"
 bash
@@ -94,7 +94,7 @@ echo -e "\e[36m===================================================\e[0m"
 echo
 echo -e "\e[32m Configuracion de Pacman, ponemos color y activamos el comococos de la barra\e[0m"
 echo
-echo -e   Escrive:$  "\e[1;33m editamos el archivo "/etc/pacman.conf" \e[0m"
+echo -e   "\e[1;32m  Vamos a editar el archivo "/etc/pacman.conf" \e[0m"
 echo    "
     Descomentamos el hashtag en la linea #Color
     
@@ -126,11 +126,13 @@ echo -e "\e[36m===================================================\e[0m"
 echo
 echo -e "\e[32m Dar color a nano: \e[0m"
 echo
-echo -e   Escrive:$  "\e[1;33m sudo nano -l /etc/nanorc \e[0m"  "-l" para mostras Nº de linea:
-echo -e   Descomentamos la linea:
-echo -E   include "'/usr/share/nano/*.nanorc'"
+echo -e     "\e[1;32m Vamos a editar el archivo nanorc: \e[0m" 
+echo
+echo -e   Descomentamos el hastag"'#'" de la linea:
+echo
+echo -E   include "'/usr/share/nano/*.nanorc'" y lo que querais de set....
 echo    "
-        Podemos hacerlo directamente desde consola con estos comandos:
+        Lo vamos hacer directamente desde consola con estos comandos:
         "
 echo -e "\e[33m sudo sed -i '/*.nanorc/s/^#//g' /etc/nanorc \e[0m"   "-> Da Color a nano"
 echo -e "\e[33m sudo sed -i '/set linenumbers/s/^#//g' /etc/nanorc \e[0m"    "-> Pone los numeros de linea"
@@ -176,7 +178,7 @@ echo
 echo -e "\e[36m===================================================\e[0m"
 echo -e "\e[36m===================================================\e[33m"
 echo
-read -p "       Press enter para reiniciar el sistema "
+read -p "       Presinar enter para reiniciar el sistema "
 # BYE
 echo -e "\n\nBBBBBB  YY    YY EEEEEEE"
  echo        "BB  BBB  YY YY   EE     "
