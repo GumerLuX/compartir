@@ -1,1 +1,0 @@
-[33m     sed -i '/*.nanorc/s/^#//g' /etc/nanorc [0m - Color a nano

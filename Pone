@@ -1,1 +1,0 @@
-[33m     sed -i '/set linenumbers/s/^#//g' /etc/nanorc [0m - los numeros de linea
