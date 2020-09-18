@@ -124,6 +124,20 @@ echo -e "\e[36m===================================================\e[0m"
 bash
 clear
 echo -e "\e[36m===================================================\e[0m"
+# COPIAMOS EL ESCRIPT DE INSTALACION
+echo -e "\e[36m===================================================\e[0m"
+echo
+echo -e "\e[32m Copiamos el script de instalacion al directorio de usuario \e[0m"
+echo
+echo   Copiamos el script de instalacion
+echo
+echo -e   Escrive:$  "\e[1;33m cd .. \e[0m"
+echo -e   Escrive:$  "\e[1;33m cp -rp compartir /mnt/home/$usuario \e[0m"
+echo -e   Escrive:$  "\e[1;33m git clone https://github.com/SinLuX90/compartir.git /mnt/home/$usuario \e[0m"
+echo
+echo -e "\e[36m===================================================\e[0m"
+bash
+clear
 echo   Copiamos el script de instalacion al directorio de usuario
 # Salimos de script y root
 echo -e "\e[36m===================================================\e[0m"

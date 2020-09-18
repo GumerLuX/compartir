@@ -26,6 +26,7 @@ Actualizamos el navegador y los vemos subidos.
 Hemos editado el archivo README.md
 
 > Para actualizar el repo local utilizamos el comando git pull:
+
 > `$ git pull`
 
 Posible error es que no tengamos asignada una rama a nuestro repositorio local,
@@ -36,6 +37,7 @@ lo podemos solucionar con este comando:
 ahora si tiene que funcionar, hacemos:
 
 `$ git pull`
+
 `$ git log` -> para ver los cambios efectuados.
 
 ---
@@ -58,7 +60,7 @@ Ahora editamos desde github,con una maquina de VirtualBox con Arclinux plasma.
 
 > 3- Nos descargamos el git y hacemos un init:
 
-`cd compartir`  -> entramos en el directorio:
+`cd compartir` -> entramos en el directorio:
 
 `git init`
 
@@ -66,11 +68,12 @@ Ahora editamos desde github,con una maquina de VirtualBox con Arclinux plasma.
 
 Entonces guardamos nuestro archivo y actualizamos desde la consola:
 
-`git status`  -> para saber el estado del repo
+`git status` -> para saber el estado del repo
 
-`git pull`    -> para bajar cambios y fusionarlos. (si hay algún cambio se actualiza)
+`git pull` -> para bajar cambios y fusionarlos. (si hay algún cambio se actualiza)
 
 ---
+
 ## Subir los cambios a github, o servidor remoto git push
 
 Hacemos un git push origin master
