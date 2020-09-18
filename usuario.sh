@@ -55,7 +55,7 @@ echo -e "   Primero hacemos una copia de seguridad:"
 echo
 echo -e   Escrive:$  "\e[1;33m   sudo cp -vf /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.backup \e[0m"
 echo
-echo -e "   Instalamos el programa midiante un script:"
+echo -e "   Instalamos el programa midiante el script reflector:"
 echo
 echo -e   Escrive:$  "\e[1;33m   sudo pacman -S reflector git \e[0m"
 echo
@@ -69,7 +69,8 @@ echo -e "\e[32m Con este comando ordenamos los mirrorlist y actualizamos lista \
 echo
 echo -e   Escrive:$  "\e[1;33m   sudo reflector --verbose --latest 5 --sort rate --save /etc/pacman.d/mirrorlist \e[0m"
 echo
-echo		  Sincronizamos lista
+echo	"	  Sincronizamos lista"
+echo
 echo -e   Escrive:$  "\e[1;33m   sudo pacman -Syy \e[0m"
 echo
 echo -e "\e[36m===================================================\e[0m"
@@ -80,6 +81,7 @@ echo -e "\e[36m===================================================\e[0m"
 echo
 echo -e "\e[32m Instalacion de AURHelper \e[0m"
 echo
+echo -e   Escrive:$  "\e[1;33m   cd .. \e[0m"  Vamos un directorio atras para instalar yay
 echo -e   Escrive:$  "\e[1;33m   git clone https://aur.archlinux.org/yay.git \e[0m"
 echo -e   Escrive:$  "\e[1;33m   cd yay \e[0m"
 echo -e   Escrive:$  "\e[1;33m   makepkg -si \e[0m"
@@ -109,6 +111,16 @@ echo -e     Gurdamos y Salimos "Crtl + o y Crtl + x"
 echo -e "\e[36m===================================================\e[0m"
 bash
 clear
+#Actualizamos de nuevo el pacman
+echo -e "\e[36m===================================================\e[0m"
+echo
+echo -e "\e[32m Sincronizamos lista de Pacman\e[0m"
+echo
+echo -e   Escrive:$  "\e[1;33m   sudo pacman -Syy \e[0m"
+echo
+echo -e "\e[36m===================================================\e[0m"
+bash
+clear
 # Dar color a nano
 echo -e "\e[36m===================================================\e[0m"
 echo
@@ -120,8 +132,8 @@ echo -E   include "'/usr/share/nano/*.nanorc'"
 echo    "
         Podemos hacerlo directamente desde consola con estos comandos:
         "
-echo -e "\e[33m     sed -i '/*.nanorc/s/^#//g' /etc/nanorc \e[0m"   -> Da Color a nano
-echo -e "\e[33m     sed -i '/set linenumbers/s/^#//g' /etc/nanorc \e[0m"    -> Pone los numeros de linea
+echo -e "\e[33m sudo sed -i '/*.nanorc/s/^#//g' /etc/nanorc \e[0m"   "-> Da Color a nano"
+echo -e "\e[33m sudo sed -i '/set linenumbers/s/^#//g' /etc/nanorc \e[0m"    "-> Pone los numeros de linea"
 echo
 echo -e     Gurdamos y Salimos "Crtl + o y Crtl + x"
 echo -e "\e[36m===================================================\e[0m"
