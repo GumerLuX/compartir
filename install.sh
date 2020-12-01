@@ -41,7 +41,7 @@ echo -e "\e[32m ACTUALIZAR REPOSITORIOS E INSTALAR EL RATON DE CONSOLA \e[0m"
 echo
 echo	Actualizamos los repositorios e instalmos el mousse para la consola  
 echo    
-echo -e   Escrive:$  "\e[1;33m pacman -Sy gpm git \e[0m"     y luego exit
+echo -e   Escrive:$  "\e[1;33m pacman -Sy gpm \e[0m"     y luego exit
 echo
 echo -e "\e[36m===================================================\e[0m"
 bash
@@ -115,7 +115,7 @@ clear
 # FORMATEAR PARTICION SWAP Y MONTAMOS
 echo -e "\e[36m===================================================\e[0m"
 echo
-echo    Formateamos la particion swap y montamos
+echo    Formateamos la particion swap y la activamos
 echo
 echo "Cual es el disco a formatear (ej: sda3)"
 #cremos la variable $disco3
@@ -125,8 +125,9 @@ echo -e   Escrive:$  "\e[1;33m mkswap /dev/$disco3 \e[0m"
 echo
 echo -e   Si qieren poner el LABEL al disco:$  "\e[1;33m mkswap -L swap /dev/$disco3 \e[0m"
 echo
+echo    "   Para activarlo pongan este comando:"
+echo
 echo -e   Escrive:$  "\e[1;33m swapon /dev/$disco3 \e[0m"
-
 echo
 echo -e "\e[36m===================================================\e[0m"
 bash
@@ -228,8 +229,11 @@ echo -e   ' Borrar el hashtag "#" en el siguiente enunciado es_ES.UTF-8 UTF-8'
 echo
 echo -e   Escrive:$  "\e[1;33m  nano /mnt/etc/locale.gen \e[0m"
 echo
-echo  -e  "  Guardar el archivo (Ctrl+o)"
-echo  -e  "  Para salir (Ctrl+x)"
+echo  -e  "  Guardar el archivo (Ctrl+o) Para salir (Ctrl+x)"
+echo
+echo    "   Pdemos hacerlo directo con este comando:"
+echo
+echo -e   Escrive:$ "\e[33m sed -i '/es_ES.UTF-8 UTF-8/s/^#//g' /mnt/etc/locale.gen \e[0m"
 echo
 echo -e "\e[36m===================================================\e[0m"
 bash
